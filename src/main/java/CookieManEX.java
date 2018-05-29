@@ -2,10 +2,11 @@ import com.journaldev.spring.mongodb.vanilla.VanillaForumConnectService;
 import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
-import java.net.*;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLConnection;
 import java.security.InvalidKeyException;
 import java.util.LinkedHashMap;
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -32,9 +33,9 @@ public class CookieManEX {
         String fullURL = forumURL+"index.php?sso="+sso;
 
         //Cookie manager
-        CookieManager cookieManager = new CookieManager();
+        /*CookieManager cookieManager = new CookieManager();
         cookieManager.setCookiePolicy(CookiePolicy.ACCEPT_ALL);
-        CookieHandler.setDefault(cookieManager);
+        CookieHandler.setDefault(cookieManager);*/
 
         //creates url for the given string
         URL url = null;
@@ -53,14 +54,14 @@ public class CookieManEX {
         }
 
         //returns the cookie store(bunch of cookies)
-        CookieStore cookieStore = cookieManager.getCookieStore();
+        //CookieStore cookieStore = cookieManager.getCookieStore();
 
         //getting cookies which returns in the form of List of type HttpCookie
-        List<HttpCookie> listOfcookies = cookieStore.getCookies();
+        //List<HttpCookie> listOfcookies = cookieStore.getCookies();
 
-        for(HttpCookie httpCookie: listOfcookies){
+        /*for(HttpCookie httpCookie: listOfcookies){
 
             System.out.println("Cookie Name : "+httpCookie.getName()+" Cookie Value : "+httpCookie.getValue());
-        }
+        }*/
     }
 }
