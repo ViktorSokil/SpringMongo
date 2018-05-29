@@ -39,7 +39,7 @@ public class CookieManEX {
         //creates url for the given string
         URL url = null;
         try {
-            url = new URL(fullURL);
+            //url = new URL(fullURL);
 
             //open's a connection with the url specified and returns URLConnection object
             URLConnection urlConnection = url.openConnection();
