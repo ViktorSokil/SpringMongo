@@ -17,9 +17,9 @@ public class Test {
             url = new URL("http://advocrowd-forum.andersenlab.com/vanilla-forum/?sso=eyAidW5pcXVlaWQiOiAiMjciLCAiZW1haWwiOiAidG9waXhvZ0BldGgyYnRjLmluZm8iLCAibmFtZSI6ICJ0b3BpeG9nQGV0aDJidGMuaW5mbyIsICJjbGllbnRfaWQiOiAiMTY1NTMyOTgxMCIgfQ== d9934ba618ed6c99fc2543c0cc084832d60228ec 1527231684 hmacsha1");
 
             //open's a connection with the url specified and returns URLConnection object
-            URLConnection  urlConnection = url.openConnection();
+            //URLConnection  urlConnection = url.openConnection();
             // get's the contents from this url specifies
-            urlConnection.getContent();
+            //urlConnection.getContent();
         } catch (MalformedURLException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
